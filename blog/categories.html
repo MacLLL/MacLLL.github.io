@@ -6,36 +6,102 @@ title: Education
 
 
 
-<div class="container">
-  <h1>Category Cloud</h1>
-	{% assign categories = site.categories | sort %}
-	{% for category in categories %}
-		<span class="site-tag">
-			<a href="{{site.url}}{{site.baseurl}}/blog/categories#{{ category [0] | slugify }}" style="text-decoration: none;" >
-				 <code class="highligher-rouge" style="font-size: {{ category | last | size  |  times: 2 | plus: 80  }}%">
-					<nobr>{{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})</nobr>
-				 </code>
-			</a> &nbsp;
-		</span>
-	{% endfor %}
-	
-	<hr>
-  {% for category in site.categories %}
-  <h2 id="{{ category[0] | slugify }}">{{ category[0] | replace:'-', ' ' }}</h2>
-  <dl class="tags-expo-posts">
-    {% for post in category[1] %}
-    <dt>
-      <code>{{ post.date | date_to_string }}</code> 
-				<i class="fas fa-angle-double-right"></i> 
-					<a href="{{ post.url }}">{{ post.title }}</a>
-					&nbsp;{% include status-indicator.html status=post.status%}
-    </dt>
-    {% if post.description %}
-    <dd style="text-align: justify">{{ post.description | markdownify }}
-    </dd>
-		{% endif %}
-		{% endfor %}
-  </dl>
-	{% endfor %}
+<section id="pub" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">McMaster University</h2>
+                </div>
+            </div>
+          
+          
+          <div class="row" id="seq">
+                <div class="col-lg-12">
+                    <h4 class="text-muted">Ph.D. candidate, Computer Science, 2018-present</h4>
+                </div>
+                <div class="col-md-12 text-muted">
+                       Advisor: Prof. <a href="http://www.cas.mcmaster.ca/wenbohe/index.html" target="_blank">Wenbo He</a>
+                </div>
+            </div>
+		
 
-</div>
+          </div>
+</section>
+
+<section id="pub" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">McMaster University</h2>
+                </div>
+            </div>
+          
+          
+          <div class="row" id="seq">
+                <div class="col-lg-12">
+                    <h4 class="text-muted">M.Sc, Computer Science, 2016-2018</h4>
+                </div>
+                <div class="col-md-12 text-muted">
+                       Major GPA: 4.0/4.0 (All A+)
+                </div>
+		  
+		<div class="col-md-12 text-muted">
+                       Advisor: Prof. <a href="http://www.cas.mcmaster.ca/wenbohe/index.html" target="_blank">Wenbo He</a>
+                </div>
+		<div class="col-md-12 text-muted">
+                       2017-2018 International Excellence Award
+                </div>
+            </div>
+		
+          </div>
+</section>
+
+<section id="pub" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Zhejiang University</h2>
+                </div>
+            </div>
+          
+          
+          <div class="row" id="seq">
+                <div class="col-lg-12">
+                    <h4 class="text-muted">Computer Science, 2015-2016</h4>
+                </div>
+                <div class="col-md-12 text-muted">
+                       Major GPA 96/100.
+                </div>
+		  
+		<div class="col-md-12 text-muted">
+                       Advisor: Prof. <a href="https://person.zju.edu.cn/en/huajun" target="_blank">Huajun Chen</a>
+                </div>
+            </div>
+		
+          </div>
+</section>
+
+<section id="pub" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Sichuan University</h2>
+                </div>
+            </div>
+          
+          
+          <div class="row" id="seq">
+                <div class="col-lg-12">
+                    <h4 class="text-muted">BE, Computer Science, 2011-2015</h4>
+                </div>
+                <div class="col-md-12 text-muted">
+                       Overall GPA 85.47/100, ranked No.8 among 386 students in the computer science department.
+                </div>
+                <div class="col-md-12 text-muted">
+                       2012 China National Scholarship (awarded rate 0.2%)
+                </div>
+
+            </div>
+		
+          </div>
+</section>
