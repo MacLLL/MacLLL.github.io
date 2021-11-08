@@ -13,7 +13,7 @@ layout: home
 </div>
 </div>
 <div class="permlinks">
-<h2>Recent News</h2>
+<h2>Recent Works</h2>
 <dl>
 	{% for post in site.posts limit:3 %}
 	<dt><code>{{ post.date | date_to_string }} </code><i class="fas fa-angle-double-right" aria-hidden="true"></i><a href="{{ post.url }}">{{ post.title }}</a> &nbsp;{% include status-indicator.html status=post.status%}
@@ -22,7 +22,7 @@ layout: home
     </dd>
 	{% endif %}
 	{% endfor %}
-	<p>... <a href="/blog">Full Posts List</a> </p>
+	<p>... <a href="/blog">Full Works List</a> </p>
 </dl>
 
 <h2>What's New</h2>
