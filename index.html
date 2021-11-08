@@ -2,8 +2,10 @@
 layout: home
 ---
 <div class="user-details">
-<h2> Me and this website </h2>
-<p style="text-align: justify;"> Your description </p>
+<h2> About Me </h2>
+<p style="text-align: justify;"> Currently, I'm a Ph.D. student (2018-) at [Computing and Software](https://www.eng.mcmaster.ca/cas), [McMaster University](https://www.mcmaster.ca/), advised by Prof. [Wenbo He](http://www.cas.mcmaster.ca/wenbohe/index.html). I also earned my M.S in computer science at McMaster University in 2018. 
+	Prior to that, in 2016, I studied in [Zhejiang University](https://www.zju.edu.cn/english/), advised by Prof. [Huajun Chen](https://person.zju.edu.cn/en/huajun). I obtained my B.E. in computer science and technology from [Sichuan University](https://en.scu.edu.cn/) in 2015.
+	</p>
 <div class="analytics"  style="border: solid lightgrey; border-radius: 5px;">
 	<h3> Analytics </h3>
 	{% include clustrmap.html style="js" %}
@@ -11,7 +13,7 @@ layout: home
 </div>
 </div>
 <div class="permlinks">
-<h2>Recent Posts</h2>
+<h2>Recent News</h2>
 <dl>
 	{% for post in site.posts limit:3 %}
 	<dt><code>{{ post.date | date_to_string }} </code><i class="fas fa-angle-double-right" aria-hidden="true"></i><a href="{{ post.url }}">{{ post.title }}</a> &nbsp;{% include status-indicator.html status=post.status%}
